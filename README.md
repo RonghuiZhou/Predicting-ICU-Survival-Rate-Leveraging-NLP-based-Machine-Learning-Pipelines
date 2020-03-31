@@ -1,5 +1,5 @@
 # <div align="center"> Predicting ICU Survival Rate Leveraging NLP-based Machine Learning Pipelines</div>
- ### <div align="center"> Data Scientist Nanodegree on [Udacity](https://www.udacity.com/): Capstone Project</div>
+ ### <div align="center"> Data Scientist Nanodegree on [Udacity](https://www.udacity.com/course/data-scientist-nanodegree--nd025): Capstone Project</div>
  ##### <div align="center"> Author: [Ronghui Zhou](https://www.linkedin.com/in/ronghuizhou/); March 30, 2020</div>
 
 ### 1. About this project
