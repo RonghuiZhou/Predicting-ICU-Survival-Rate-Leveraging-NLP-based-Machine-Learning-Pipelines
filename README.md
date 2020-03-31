@@ -62,7 +62,17 @@ storetime_order was created based on the order of storetime, this allows me to k
 
     As the initial selected data set has more than 75% of survived patients, machine learning algorithms didn't perform well for the minority. This is handled by under-sampling the major data with patients survived, using pandas' sampling feature without replacement to generate balanced data sets between survived and died patient groups. This allows machine learning algorithms to train and fit properly, improving the performance on minor data set.
 
-### 4. Conclusion & Perspective
+### 4. Exploratory Data Analysis
+#### Age distribution
+    The average age of patients died is significantly higher than patients survived (more than 10 years older). It makes sense as older people have weaker health condition and harder to recover from serious diseases.
+
+#### Insurance distribution
+    It is found that significantly higher portion of patients died had Medicare insurance, in comparison to private insurance for patients survived. 
+
+#### Top 10 diagnoses for different patient groups
+    What are the top reasons for patients to go to ICU and die? In this data set, the top 10 reasons for going to ICU are: pneumonia, sepsis, intracranial hemorrhage, coronary artery disease, congestive heart failure, chest pain, altered mental status, gastrointestinal bleed, subarachnoid hemorrhage, and abdominal pain. Five out of these have less than 50% survival rate within 30 days, with the least one being sepsis with less than 30% patients survived. 
+
+### 5. Conclusion & Perspective
 This project demonstrated that it is possible to identify high risky patients and predict mortality with pretty good accuracy. Further improvement is possible to utilize biomedical natural language processing packages such as spaCy or SciSpaCy (https://spacy.io/), to understand medical notes more accurately and extract relevant information.
 
 In this project, we haven’t used any lab results and radiology reports. More work needs to be done to incorporate these data to extract meaningful information. Advanced imaging processing techniques and deep learning algorithms might be helpful as well.
