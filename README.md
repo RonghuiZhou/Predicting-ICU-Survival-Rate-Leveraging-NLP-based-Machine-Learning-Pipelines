@@ -56,6 +56,11 @@ storetime_order was created based on the order of storetime, this allows me to k
 
 #### Abnormalities 
     There are some entries found to have negative los_death, meaning the reported death time is earlier than the icu admission time. These entries are removed from this data set.
+    
+    
+#### Data engieering
+
+    As the initial selected data set has more than 75% of survived patients, machine learning algorithms didn't perform well for the minority. This is handled by under-sampling the major data with patients survived, using pandas' sampling feature without replacement to generate balanced data sets between survived and died patient groups. This allows machine learning algorithms to train and fit properly, improving the performance on minor data set.
 
 ### 4. Conclusion & Perspective
 This project demonstrated that it is possible to identify high risky patients and predict mortality with pretty good accuracy. Further improvement is possible to utilize biomedical natural language processing packages such as spaCy or SciSpaCy (https://spacy.io/), to understand medical notes more accurately and extract relevant information.
