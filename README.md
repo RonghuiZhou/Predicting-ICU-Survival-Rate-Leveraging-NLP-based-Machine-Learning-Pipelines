@@ -1,18 +1,18 @@
 # Predicting ICU Survival Rate Leveraging NLP-based Machine Learning Pipelines
- ### Udacity Data Scientist Nanodegree Capstone Project 
- ##### Ronghui Zhou, Ph.D.
+ ### Data Scientist Nanodegree on [Udacity](https://www.udacity.com/): Capstone Project 
+ ##### Author: [Ronghui Zhou](https://www.linkedin.com/in/ronghuizhou/); March 30, 2020
 
 ### 1. About this project
-    1.1 Jupyterbook is available inside the notebook folder:
+#### 1.1 Jupyterbook is available inside the notebook folder:
 
-Predicting ICU Survival Rate within 30 Days Leveraging NLP-based Machine Learning Pipelines_final_revised.ipynb
+    Predicting ICU Survival Rate within 30 Days Leveraging NLP-based Machine Learning Pipelines_final_revised.ipynb
 
-    1.2 Library requirement:
+#### 1.2 Library requirement:
 
-This project was developed on Jupyter Notebook with Python 3.7. Please refer to libary_requirement.txt for libraries used in this notebook.
+    This project was developed on Jupyter Notebook with Python 3.7. Please refer to libary_requirement.txt for libraries used in this notebook.
 
-    1.3 Additional report on Medium: 
-https://medium.com/@RonghuiZhou/icu-survival-rate-within-30-days-leveraging-natural-language-processing-a0d8fcaeecde
+#### 1.3 Additional report on Medium: 
+    https://medium.com/@RonghuiZhou/icu-survival-rate-within-30-days-leveraging-natural-language-processing-a0d8fcaeecde
 
 ### 2. Introduction  
 #### Project Overview 
