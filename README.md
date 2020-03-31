@@ -14,6 +14,10 @@
 #### 1.3 Additional report on Medium: 
     https://medium.com/@RonghuiZhou/icu-survival-rate-within-30-days-leveraging-natural-language-processing-a0d8fcaeecde
 
+#### 1.4 How to run this project:
+     Downlaod anaconda and pip install required libraries. Download the jupyter notebook from notebook folder for this project to evaluate it.
+     https://www.anaconda.com/
+
 ### 2. Introduction  
 #### 2.1 Project Overview 
 This project will outline how to select a patient cohort, clean the data for exploratory visualization and building a classification model to predict the mortality within 30 days after ICU admission, utilizing initial caregivers’ notes.
