@@ -15,7 +15,7 @@
     https://medium.com/@RonghuiZhou/icu-survival-rate-within-30-days-leveraging-natural-language-processing-a0d8fcaeecde
 
 #### 1.4 How to run this project:
-     Downlaod anaconda and pip install required libraries. Download the jupyter notebook from notebook folder for this project to evaluate it.
+     Download anaconda and pip install required libraries from the command line. Download the jupyter notebook from notebook folder for this project to evaluate it.
 
 https://www.anaconda.com/
 
