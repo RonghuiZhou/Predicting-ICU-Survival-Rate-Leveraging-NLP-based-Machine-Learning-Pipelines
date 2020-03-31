@@ -1,6 +1,6 @@
-# Predicting ICU Survival Rate Leveraging NLP-based Machine Learning Pipelines
- ### Data Scientist Nanodegree on [Udacity](https://www.udacity.com/): Capstone Project 
- ##### Author: [Ronghui Zhou](https://www.linkedin.com/in/ronghuizhou/); March 30, 2020
+# <div align="center"> Predicting ICU Survival Rate Leveraging NLP-based Machine Learning Pipelines</div>
+ ### <div align="center"> Data Scientist Nanodegree on [Udacity](https://www.udacity.com/): Capstone Project</div>
+ ##### <div align="center"> Author: [Ronghui Zhou](https://www.linkedin.com/in/ronghuizhou/); March 30, 2020</div>
 
 ### 1. About this project
 #### 1.1 Jupyterbook is available inside the notebook folder:
@@ -15,13 +15,13 @@
     https://medium.com/@RonghuiZhou/icu-survival-rate-within-30-days-leveraging-natural-language-processing-a0d8fcaeecde
 
 ### 2. Introduction  
-#### Project Overview 
+#### 2.1 Project Overview 
 This project will outline how to select a patient cohort, clean the data for exploratory visualization and building a classification model to predict the mortality within 30 days after ICU admission, utilizing initial caregivers’ notes.
 
-#### Problem Statement 
+#### 2.2 Problem Statement 
 The goal is to identify potential high risk patients and try to predict the possibility of survival within 30 days after the ICU admission. If the chance is low, actions should be taken to intervene.
 
-#### Data Set 
+#### 2.3 Data Set 
 https://mimic.physionet.org/ 
 
 MIMIC-III (Medical Information Mart for Intensive Care III) is a large, freely-available database comprising deidentified health-related data associated with over forty thousand patients who stayed in critical care units of the Beth Israel Deaconess Medical Center between 2001 and 2012. 
@@ -33,16 +33,16 @@ MIMIC-III, a freely accessible critical care database. Johnson AEW, Pollard TJ, 
 
 Available at: http://www.nature.com/articles/sdata201635
 
-#### Metrics  
+#### 2.4 Metrics  
 We will evaluate the performance of machine learning models based on accuracy and confusion matrix.
 Classification report shows the metrics: precision, recall, f1-score, and support.
 
 ### 3. Patient Cohort & Data Preparation
-#### Patient Cohort
+#### 3.1 Patient Cohort
 
 In this project, ICU patients in the age range 18 to 100 are selected.
 
-#### Feature engineering
+#### 3.2 Feature engineering
 
 storetime_order was created based on the order of storetime, this allows me to keep only the initial note after icu admission. Machine learning models are built on the initial note only, neglecting subsequent notes.
 
@@ -54,22 +54,22 @@ storetime_order was created based on the order of storetime, this allows me to k
 
     d. Icustay_order was created based on the order of icu admission time, this allows me to keep only the most recent icu admission. 
 
-#### Abnormalities 
+#### 3.3 Abnormalities 
     There are some entries found to have negative los_death, meaning the reported death time is earlier than the icu admission time. These entries are removed from this data set.
     
     
-#### Data engieering
+#### 3.4 Data engieering
 
     As the initial selected data set has more than 75% of survived patients, machine learning algorithms didn't perform well for the minority. This is handled by under-sampling the major data with patients survived, using pandas' sampling feature without replacement to generate balanced data sets between survived and died patient groups. This allows machine learning algorithms to train and fit properly, improving the performance on minor data set.
 
 ### 4. Exploratory Data Analysis
-#### Age distribution
+#### 4.1 Age distribution
     The average age of patients died is significantly higher than patients survived (more than 10 years older). It makes sense as older people have weaker health condition and harder to recover from serious diseases.
 
-#### Insurance distribution
+#### 4.2 Insurance distribution
     It is found that significantly higher portion of patients died had Medicare insurance, in comparison to private insurance for patients survived. 
 
-#### Top 10 diagnoses for different patient groups
+#### 4.3 Top 10 diagnoses for different patient groups
     What are the top reasons for patients to go to ICU and die? In this data set, the top 10 reasons for going to ICU are: pneumonia, sepsis, intracranial hemorrhage, coronary artery disease, congestive heart failure, chest pain, altered mental status, gastrointestinal bleed, subarachnoid hemorrhage, and abdominal pain. Five out of these have less than 50% survival rate within 30 days, with the least one being sepsis with less than 30% patients survived. 
 
 ### 5. Conclusion & Perspective
