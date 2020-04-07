@@ -5,7 +5,7 @@
 ### 1. About this project
 #### 1.1 Jupyterbook is available inside the notebook folder:
 
-    Predicting ICU Survival Rate within 30 Days Leveraging NLP-based Machine Learning Pipelines_final_revised.ipynb
+    Predicting ICU Survival Rate within 30 Days Leveraging NLP-based Machine Learning Pipelines.ipynb
 
 #### 1.2 Library requirement:
 
