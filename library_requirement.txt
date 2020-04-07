@@ -10,3 +10,5 @@ re
 nltk
 sklearn
 xgboost
+spacy
+en_core_sci_lg
